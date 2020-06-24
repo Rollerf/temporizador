@@ -21,7 +21,7 @@ public:
     //Getters and setters
     unsigned long getActualTime();
     unsigned long getSetPoint();
-    void setSetPoint();
+    void setSetPoint(unsigned long timeSetPoint);
 };
 
 class TON : public Timer

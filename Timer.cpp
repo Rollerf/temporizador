@@ -13,6 +13,11 @@ unsigned long Timer::getActualTime()
     return actualTime;
 }
 
+void Timer::setSetPoint(unsigned long setPoint)
+{
+    this->setPoint = setPoint;
+}
+
 bool TON::IN(bool on)
 {
     if (on != lastState)
