@@ -5,12 +5,12 @@ Timer::Timer(unsigned long setPoint)
     this->setPoint = setPoint;
     lastState = 0;
     timeInit = 0;
-    actualTime = 0;
+    currentTime = 0;
 }
 
-unsigned long Timer::getActualTime()
+unsigned long Timer::getCurrentTime()
 {
-    return actualTime;
+    return currentTime;
 }
 
 void Timer::setSetPoint(unsigned long setPoint)
@@ -27,9 +27,9 @@ bool TON::IN(bool on)
     }
     else
     {
-        actualTime = millis() - timeInit;
+        currentTime = millis() - timeInit;
 
-        if (actualTime >= setPoint)
+        if (currentTime >= setPoint)
         {
             return true;
         }

@@ -18,7 +18,7 @@ void loop() {
     Serial.println("TON OFF");
 
     //Return the time since the ton1 turned on
-    Serial.println(ton1->getActualTime());
+    Serial.println(ton1->getCurrentTime());
   }
 
   if (ton2->IN(true)) {

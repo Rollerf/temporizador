@@ -9,7 +9,7 @@ class Timer
 protected:
     /* data */
     unsigned long timeInit;
-    unsigned long actualTime;
+    unsigned long currentTime;
     unsigned long setPoint;
     bool lastState;
 
@@ -19,7 +19,7 @@ public:
     //Destructor
     ~Timer();
     //Getters and setters
-    unsigned long getActualTime();
+    unsigned long getCurrentTime();
     unsigned long getSetPoint();
     void setSetPoint(unsigned long timeSetPoint);
 };
