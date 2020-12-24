@@ -13,6 +13,11 @@ unsigned long Timer::getCurrentTime()
     return currentTime;
 }
 
+unsigned long Timer::getSetPoint()
+{
+    return setPoint;
+}
+
 void Timer::setSetPoint(unsigned long setPoint)
 {
     this->setPoint = setPoint;
